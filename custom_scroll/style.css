@@ -21,6 +21,13 @@ body {
     background-color: fuchsia;
 }
 
+.square2 {
+    /* margin-top: 20vh; */
+    width: 150px;
+    height: 20vh;
+    background-color: green;
+}
+
 .red {
     background-color: red;
 }

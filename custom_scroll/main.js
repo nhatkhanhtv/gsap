@@ -2,10 +2,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".square", {
     // x: 700,
-    duration: 3,
+    duration: 8,
     scrollTrigger: {
-        trigger: ".square",
-        start: "top 30%",
+
+        trigger: ".square2",
+        start: "top 80%",
+        end: () => `+=${document.querySelector(".square").offsetHeight}`,
+        // end: "top 30%",
+        scrub: 4,
+        pin: ".square",
+        pinSpacing: true,
+        toggleActions: "restart none none none",
+        //              onEnter onLeave OnEnterBack OnLeaveBack       
         // markers: {
         //     startColor: "purple",
         //     endColor: "fuchsia",
@@ -13,7 +21,6 @@ gsap.to(".square", {
         //     indent: 200
         // }
         markers: "true",
-        toggleClass: "red",
-        end: () => `+=${document.querySelector(".square").offsetHeight}`
+        // toggleClass: "red",
     }
 })

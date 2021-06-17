@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.panel {
+    height: 100vh;
+    background-color: cornsilk;
+}
+
+.box-red {
+    background-color: red;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    transition: all 600ms ease-in-out;
+    background-color: tan;
+    color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+li {
+    margin: 20px;
+}
+
+.nav-active {
+    background-color: white;
+    color: black;
+}
+
+p {
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
